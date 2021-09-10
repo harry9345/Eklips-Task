@@ -1,0 +1,590 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: "Trebuchet MS", "Helvetica", "Liberation Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: black;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  color: #757373;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #d41217;
+}
+
+.cookieBar {
+  background-color: #e7e8e82c;
+  width: 100vw;
+  height: 8vh;
+  justify-content: center;
+  z-index: 1500;
+}
+.content {
+  font-size: 1.4rem;
+}
+
+.redText {
+  color: #d41217;
+}
+.btnBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing {
+  background-image: linear-gradient(to right bottom, #d4121838, #d412182c),
+    url(../src/mainBackground.png);
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 100vw;
+}
+.navigation {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  background-color: rgba(255, 254, 254, 0.808);
+}
+
+.navigation__brand {
+  border-bottom: 1px solid #d41217;
+}
+.navigation__brand-logo a {
+  color: #d41217;
+  font-size: 35px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+}
+.navigation__list :hover {
+  color: #d41217;
+}
+.navigation__item {
+  margin: 2.5rem;
+}
+.navigation__link {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.navigation__item:hover {
+  background-color: #d4121886;
+  color: #d41217;
+  padding: 10px;
+}
+#kebab__menu {
+  display: none;
+}
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-right: 50px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.language {
+  background-color: #d41217;
+  color: #e7e8e8;
+}
+.magnifireDiv {
+  background-color: #d41217;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#searchbar__onMobile {
+  display: none;
+}
+.navigation__searchBar {
+  border-top: 1.5px solid rgba(42, 41, 41, 0.787);
+  width: 100vw;
+  height: 10vh;
+  justify-content: center;
+  z-index: 1500;
+  box-shadow: 1px rgba(49, 47, 47, 0.527);
+}
+.navbar .megamenu {
+  padding: 1rem;
+}
+.mega__dropdown {
+  width: 100vw !important;
+  height: 20vh !important;
+  background-color: rgba(255, 254, 254, 0.808);
+  left: -29px !important;
+  border: 0;
+  border-top: 1px solid rgba(73, 71, 71, 0.767);
+}
+.megamenu__col {
+  width: 19vw;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+}
+.header__text-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+  text-align: center;
+}
+.heading-primary {
+  color: white;
+  margin-bottom: 2rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: 1rem;
+}
+
+.cards {
+  width: 102vw;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+.cards__header {
+  text-align: center;
+  font-size: 2rem;
+}
+.cards__muted {
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-align: center;
+}
+.cards__content {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+.cards__contentS {
+  font-size: 1.3rem;
+  text-align: center;
+  display: flex;
+  float: left;
+  align-items: center;
+}
+.cards__interrimIcon {
+  font-size: 1.3rem;
+  text-align: center;
+  display: flex;
+  float: left;
+  align-items: center;
+}
+.cards__press {
+  color: #fff;
+  background-color: #8961a6;
+  line-height: normal;
+}
+.cards__press button {
+  font-size: 1.6rem;
+  color: #8961a6;
+}
+.cards__calender {
+  color: #fff;
+  background-color: #f39332;
+  line-height: normal;
+}
+.cards__calender button {
+  font-size: 1.6rem;
+  color: #f39332;
+}
+.cards__interrim {
+  color: #fff;
+  line-height: normal;
+  background-color: #8db524;
+}
+.cards__interrim button {
+  font-size: 1.6rem;
+  color: #8db524;
+}
+
+.cards__share {
+  color: #fff;
+  line-height: normal;
+  background-color: #d41217;
+}
+.share__header {
+  font-size: 3rem;
+  text-align: center;
+}
+.share__content {
+  font-size: 1.9rem;
+  text-align: center;
+}
+.share__contanetS {
+  font-size: 4.1rem;
+  text-align: center;
+}
+.cards__share button {
+  font-size: 1.6rem;
+  color: #d41217;
+}
+.heros {
+  width: 102vw;
+}
+.heros__col {
+  display: flex;
+}
+.heros h2 {
+  font-size: 4.8rem;
+  margin-bottom: 3rem;
+}
+.onlineGaming {
+  background-color: #e8f0d3;
+  color: #000;
+  font-size: 1.8rem;
+}
+.onlineGaming__picture {
+  background-image: linear-gradient(to right bottom, #c3bebeb2, #ffffffb0),
+    url(../src/tablet.png);
+
+  background-size: cover;
+  background-position: top;
+  width: 51vw;
+  height: 90vh;
+}
+.onlineGaming h2 {
+  color: #8db524;
+}
+.restaurantCasino {
+  background-color: #e7dfed;
+  font-size: 1.8rem;
+  color: #8961a6;
+}
+.restaurantCasino__picture {
+  background-image: url(../src/poker.png);
+  background-size: cover;
+  background-position: top;
+  width: 51vw;
+  height: 80vh;
+}
+
+.gameDevelopment {
+  background-color: #fde9d6;
+  font-size: 1.8rem;
+  color: #f39331;
+}
+
+.gameDevelopment__picture {
+  background-image: linear-gradient(to right bottom, #c3bebeb2, #ffffffb0),
+    url(../src/office.png);
+  background-size: cover;
+  background-position: top;
+  width: 51vw;
+  height: 80vh;
+}
+.performance {
+  background-color: #d9f2fb;
+  font-size: 1.8rem;
+  color: #41bfed;
+}
+
+.performance__picture {
+  background-color: #fff;
+  background-image: url(../src/figure1.png);
+  background-size: cover;
+  background-position: top;
+  width: 21vw;
+  height: 74vh;
+}
+.gameTechnology {
+  background-color: #e7e8e8;
+  font-size: 1.8rem;
+  color: #4a4a4a;
+}
+
+.gameTechnology__picture {
+  background-image: url(../src/laptop.png);
+  background-size: cover;
+  background-position: top;
+  width: 51vw;
+  height: 80vh;
+}
+.developmentProject {
+  background-color: #f6cfd0;
+  font-size: 1.8rem;
+  color: #d41217;
+}
+
+.developmentProject__picture {
+  background-image: url(../src/figure2.png);
+  background-size: cover;
+  background-position: top;
+  width: 51vw;
+  height: 80vh;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__header {
+  color: #d41217;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__item {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__icon {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email__icon {
+  font-size: 1.4rem;
+  color: #e7e8e8;
+  text-align: center;
+  background-color: #41bfed;
+}
+.android__icon {
+  font-size: 1.4rem;
+  color: #e7e8e8;
+  text-align: center;
+  background-color: #4a494a;
+}
+.footer {
+  width: 100vw;
+  background-color: #fdf3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__Row {
+  width: 80%;
+  left: 10%;
+}
+.footer__links {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #d41217;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.hr {
+  width: 80%;
+  left: 10%;
+  height: 2px;
+  color: #d41217;
+  position: absolute;
+}
+.footer__end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* ============ mobile view ============ */
+@media (max-width: 991px) {
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+/* ==========  for devices with screen less than 600 px ================ */
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .cookieBar {
+    display: none;
+  }
+  .navigation__item {
+    border-bottom: 1px solid #d41217;
+  }
+  .navigation {
+    width: 102vw;
+    background-color: rgb(255, 255, 255);
+  }
+  .navigation__item:hover {
+    background-color: #fff;
+    color: #d41217;
+    padding: 10px;
+  }
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+  }
+  .langMenu {
+    display: none;
+  }
+  #magnifire {
+    display: none;
+  }
+  #main_nav {
+    margin-left: -35px;
+  }
+  #searchbar__onMobile {
+    display: block;
+    margin-top: 12px;
+  }
+  .mobile__row {
+    display: contents;
+  }
+  #kebab__menu {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+  }
+  .navigation__brand {
+    padding-left: 0;
+    border: none;
+  }
+  .navigation__brand-logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .landing {
+    background-image: linear-gradient(to right bottom, #d4121838, #d412182c),
+      url(../src/mainBackground.png);
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    width: 102vw;
+  }
+  .cards {
+    width: 102vw;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+  }
+  .header {
+    width: 100vw;
+    height: 50vh;
+  }
+  .heading-primary--main {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: 0rem;
+  }
+  .heros h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .heros__col {
+    display: flex;
+    flex-flow: wrap-reverse;
+  }
+  .onlineGaming__picture {
+    background-image: url(../src/tablet.png);
+    background-size: contain;
+    background-position: top;
+    width: 100vw;
+    height: 36vh;
+  }
+  .restaurantCasino__picture {
+    background-image: url(../src/poker.png);
+    background-size: contain;
+    background-position: top;
+    width: 100vw;
+    height: 35vh;
+  }
+  .gameDevelopment__picture {
+    background-image: linear-gradient(to right bottom, #c3bebeb2, #ffffffb0),
+      url(../src/office.png);
+    background-size: contain;
+    background-position: top;
+    width: 100vw;
+    height: 35vh;
+  }
+  .performance__picture {
+    background-color: #fff;
+    background-image: url(../src/figure1.png);
+    background-size: contain;
+    background-position: top;
+    width: 60vw;
+    height: 40vh;
+  }
+  .gameTechnology__picture {
+    background-image: url(../src/laptop.png);
+    background-size: contain;
+    background-position: top;
+    width: 100vw;
+    height: 36vh;
+  }
+  .developmentProject__picture {
+    background-image: url(../src/figure2.png);
+    background-size: contain;
+    background-position: top;
+    width: 100vw;
+    height: 31vh;
+  }
+  .footer__mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
